@@ -5,7 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Erhvervsakademi København</title>
     </head>
+    <style>
+	.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  background-color: lightgrey;
+  color: darkred;
+}
+
+.menu a.active {
+  background-color: darkred;
+  color: white;
+}
+.klokken {
+  background-color: lightgrey;
+  width: auto;
+  border: 15px #555;
+  padding: 18px;
+  margin: 5px;
+  text-align: center;
+}
+.brugerliste {
+  background-color: lightgrey;
+  width: auto;
+  border: 15px #555;
+  padding: 18px;
+  margin: 5px;
+  text-align: left;
+}
+
+	</style> 
     <body>
+        <div class="menu">
+  <a href="profilside1.php"> Profilside</a>
+  <a href="indlægsliste1.php">Se alle indlæg</a>
+  <a class="active" href="brugerliste1.php">Se alle brugere</a>
+  <a href="opret1.php">Opret et nyt indlæg</a>
+  <a href="logud.php">Login/logud</a>
+</div>
         <h1>Mit første site på MMD</h1>
         <p>Dette er min første webside på MMD.</p>
         <p>Det er en index.html fil, som man kun kan se, fordi browseren leder efter og viser index.html.</p>
